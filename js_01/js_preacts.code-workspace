@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../js_preacts"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "js_01"
+	}
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="hero.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="card">
+            <h1>Elon Musk</h1>
+            <p>@elonmusk</p>
+            <img src="doctor8.png" alt="" id="profile-pic">
+            <label for="input-file">Update Img</label>
+            <input type="file" name="" id="input-file" accept="author3.png, author3.png, author3.png">
+        </div>
+    </div>
+
+    <script>
+        let profilePic = document.getElementById("profile-pic");
+        let inputFile = document.getElementById("input-file");
+
+        inputFile.onchange = function(){
+            profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        }
+    </script>
+</body>
+</html>
